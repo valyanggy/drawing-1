@@ -1,0 +1,712 @@
+/*
+  Coding from Life – Sketch 1: fixed layout
+
+  For sketch 1 you'll be positioning elements relative to an element with a fixed
+  width and height. For this sketch you can position elements by using pixel values.
+*/
+
+body {
+  background-color: #FFE4E1;
+}
+
+.frame {
+  width: 1000px;
+  height: 600px;
+  background: #3131312e;
+  margin: 30px auto;
+  position: relative;
+  z-index: -2;
+}
+
+/* Your CSS goes here */
+
+.book-top{
+  width: 71px;
+  height: 19px;
+  background: red;
+  position: absolute;
+  left: 78%;
+  top: 66%;
+  transform: skew(83deg,-27deg);
+  z-index: 2;
+
+}
+
+.book-middle{
+  width: 2px;
+  height: 19px;
+  background: yellow;
+  position: absolute;
+  left: 78%;
+  top: 72.2%;
+  transform: skew(83deg,-93deg);
+  z-index: 1;
+
+}
+
+.book-middle2{
+  width: 2px;
+  height: 37px;
+  background: orange;
+  position: absolute;
+  left: 89.4%;
+  top: 69.2%;
+  transform: skew(117deg,-93deg);
+  z-index: 3;
+
+}
+
+.book-bottom{
+  width: 100px;
+  height: 23px;
+  background: blue;
+  position: absolute;
+  left: 77%;
+  top: 71.3%;
+  transform: skew(83deg,-28deg);
+}
+
+.book-bottom2{
+  width: 100px;
+  height: 23px;
+  background: blue;
+  position: absolute;
+  left: 77%;
+  top: 71.3%;
+  transform: skew(83deg,-28deg);
+}
+
+.table{
+  width: 900px;
+  height: 350px;
+  background: #efefe8;
+  position: absolute;
+  left: 24%;
+  top: 70%;
+  transform: skew(78deg,-194deg);
+  z-index: -4;
+}
+
+.tablesheet{
+width: 538px;
+    height: 175px;
+    background: #f9f9cf;
+    position: absolute;
+    left: 25%;
+    top: 99%;
+    transform: skew(78deg,-194deg);
+    z-index: -3;
+}
+.lens{
+  width: 30px;
+  height:30px;
+  border-radius: 50%;
+  background-color: black;
+  position: absolute;
+  left: 81.6%;
+  top: 62%;
+  z-index: 5;
+  transform: skew(3deg,-21deg);
+}
+
+
+.camfront{
+  width: 2px;
+  height: 5.5px;
+  background: grey;
+  position: absolute;
+  left: 78.8%;
+  top: 64.6%;
+  z-index: 4;
+  transform: skew(76.7deg,-88deg);
+
+}
+
+.camfront2{
+  width: 2px;
+  height: 20px;
+  background: lightblue;
+  position: absolute;
+  left: 82.7%;
+  top: 62.5%;
+  z-index: 4;
+  transform: skew(-69deg,-88deg);
+}
+
+.camtop{
+  width: 47px;
+  height: 5px;
+  background: darkorange;
+  position: absolute;
+  left: 79.1%;
+  top: 58.5%;
+  z-index: 5;
+  transform: skew(80deg,-22deg);
+}
+
+.candlebody{
+    width: 38px;
+    height: 70px;
+    background: #f9c62f;
+    position: absolute;
+    left: 56%;
+    top: 67%;
+    z-index: 0;
+    /* transform: skew(1deg,4deg); */
+    border-radius: 20%;
+}
+
+.candlebodyb{
+width: 38px;
+    height: 70px;
+    background: #f9c62f;
+    position: absolute;
+    left: 28%;
+    top: 90%;
+    z-index: 5;
+    /* transform: skew(1deg,4deg); */
+    border-radius: 20%;
+}
+
+.candlebody4{
+width: 30px;
+    height: 116px;
+    background: white;
+    position: absolute;
+    left: 56.3%;
+    top: 54%;
+    z-index: -1;
+    /* transform: skew(1deg,4deg); */
+    border-radius: 20%;
+}
+
+.candlebody4b{
+    width: 30px;
+    height: 116px;
+    background: white;
+    position: absolute;
+    left: 28.3%;
+    top: 75%;
+    z-index: 4;
+    /* transform: skew(1deg,4deg); */
+    border-radius: 20%;
+}
+
+
+.handle{
+  position: absolute;
+  background-color: #f9c62f;
+      left: 57.5%;
+    top: 76%;
+    height: 168px;
+    width: 5px;
+  z-index: 3;
+}
+
+
+.handleb{
+ position: absolute;
+    background-color: #f9c62f;
+    left: 29.5%;
+    top: 91%;
+    height: 168px;
+    width: 5px;
+    z-index: 3;
+}
+
+.ring{
+    width: 120px;
+    height: 50px;
+    border-style: solid;
+    border-color: #f9c62f;
+    /* background: #f9c62f; */
+    position: absolute;
+    left: 51.5%;
+    top: 99%;
+    z-index: -2;
+    border-radius: 50%;
+}
+
+.ringb{
+width: 120px;
+    height: 50px;
+    border-style: solid;
+    border-color: #f9c62f;
+    /* background: #f9c62f; */
+    position: absolute;
+    left: 23.5%;
+    top: 114%;
+    z-index: -2;
+    border-radius: 50%;
+}
+
+
+.candlehead{
+  width: 26px;
+  height: 22px;
+  background: brown;
+  position: absolute;
+  left: 63.5%;
+  top: 67%;
+  z-index: 0;
+  transform:skew(1deg,4deg)
+}
+
+.candletail{
+  position: absolute;
+  left: 68%;
+  top: 68.1%;
+      border-top: 0px solid transparent;
+      border-left: 29px solid brown;
+      border-bottom: 18px solid transparent;
+}
+
+.candleleg{
+  position: absolute;
+  left: 65.5%;
+  top: 72%;
+  border-bottom: 12px solid black;
+      border-left: 9px solid transparent;
+      border-right: 9px solid transparent;
+      height: 0;
+      width: 10px;
+}
+
+.candlebody2{
+  width: 44px;
+  height: 28px;
+  background: brown;
+  position: absolute;
+  left: 64.5%;
+  top: 63.3%;
+  z-index: 0;
+  transform:skew(1deg,4deg)
+}
+
+.candlehead2{
+  width: 26px;
+  height: 22px;
+  background: brown;
+  position: absolute;
+  left: 62.5%;
+  top: 62%;
+  z-index: 0;
+  transform:skew(1deg,4deg)
+}
+
+.candletail2{
+  position: absolute;
+  left: 68%;
+  top: 63.5%;
+      border-top: 0px solid transparent;
+      border-left: 29px solid brown;
+      border-bottom: 18px solid transparent;
+}
+
+.candleleg2{
+  position: absolute;
+  left: 65.2%;
+  top: 66%;
+  border-bottom: 10px solid black;
+      border-left: 11px solid transparent;
+      border-right: 6px solid transparent;
+      height: 0;
+      width: 10px;
+}
+
+/*.vase{*/
+  position: absolute;
+
+     width: 8%;
+    height: 28%;
+    z-index: 3;
+    top: 61%;
+    left: 42%
+  background-color: pink;
+
+}
+
+
+
+
+
+.bear{
+  width: 69px;
+  height: 64px;
+  background: beige;
+  position: absolute;
+  left: 60%;
+  top: 56%;
+  z-index: -2;
+  border-radius: 50%;
+}
+
+
+
+
+.bird{
+    position: absolute;
+    left: 11%;
+    top: 93.5%;
+    transform: rotate(90deg);
+    display: block;
+    width: 40px;
+    height: 67px;
+    background-color: #563737;
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+}
+
+.birdhead{
+    width: 21px;
+    height: 32px;
+    background: #563737;
+    position: absolute;
+    left: 15%;
+    top: 95%;
+    z-index: 0;
+    transform: skew(-50deg,40deg);
+    border-radius: 45%;
+}
+
+.birdtail{
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: 8%;
+    top: 94%;
+    z-index: 0;
+    border-top: 9px solid transparent;
+    border-left: 49px solid #563737;
+    border-bottom: 12px solid transparent;
+    transform: skew(-30deg,30deg);
+
+}
+
+.birdbleak{
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: 17.5%;
+    top: 94%;
+    z-index: 0;
+    border-top: 8px solid transparent;
+    border-left: 20px solid #563737;
+    border-bottom: 9px solid transparent;
+    /* transform: skew(-30deg,30deg); */
+    transform: rotate(-30deg);
+
+}
+
+.handlec{
+position: absolute;
+    background-color: #563737;
+    left: 12.5%;
+    top: 101%;
+    height: 60px;
+    width: 5px;
+    z-index: 3;
+}
+
+.bird-bottom{
+      width: 82px;
+    height: 43px;
+    background: #847870;
+    position: absolute;
+    left: 9%;
+    top: 107.3%;
+    transform: skew(8deg,-8deg);
+}
+
+.bird-bottomb{
+width: 82px;
+    height: 13px;
+    background: #58504b;
+    position: absolute;
+    left: 9.3%;
+    top: 113.7%;
+    transform: skew(-6deg,-9deg);
+}
+
+.bird-bottomc{
+    width: 7px;
+    height: 8px;
+    background: #332f2c;
+    position: absolute;
+    left: 8.6%;
+    top: 111.7%;
+    transform: skew(-20deg,82deg);
+}
+
+.vase{
+  position: absolute;
+  /*border: 1px solid grey;*/
+  border-radius: 10px/40px;
+    width: 8%;
+    height: 27%;
+    z-index: 3;
+    top: 61%;
+    left: 42%;
+  background: rgb(133,133,133);
+  background: linear-gradient(90deg, rgba(133,133,133,0.5048543689320388) 16%, rgba(218,218,218,0.6553398058252426) 50%, rgba(142,142,142,0.4854368932038835) 89%);
+}
+
+
+.trapezoid {
+      position: absolute;
+      width: 8%;
+      height: 11%;
+      z-index: 3;
+      top: 88%;
+      left: 42%;
+      border-bottom: 0px solid rgb(133,133,133);
+      border-left: 22px solid transparent;
+      border-right: 22px solid transparent;
+      height: 18;
+      width: 37px;
+      background: rgb(133,133,133);
+      background: linear-gradient(90deg, rgba(133,133,133,0.5048543689320388) 16%, rgba(218,218,218,0.6553398058252426) 50%, rgba(142,142,142,0.4854368932038835) 89%);
+
+}
+
+/*FLOWERS*/
+.stem1{
+  position: absolute;
+  background: #423e1a;
+  width: .75%;
+  height: 38%;
+  z-index: 2;
+  top: 50%;
+  left: 44%;
+}
+
+.stem2{
+  position: absolute;
+  background: #423e1a;
+  width: .75%;
+  height: 37%;
+  z-index: 2;
+  top: 50%;
+  left: 46%;
+  transform: rotate(2deg);
+}
+
+.stem3{
+  position: absolute;
+  background: #423e1a;
+  width: .70%;
+  height: 36%;
+  z-index: 2;
+  top: 49%;
+  left: 47%;
+  transform: rotate(-3deg);
+}
+
+.stem4{
+  position: absolute;
+  background: #423e1a;
+  width: .70%;
+  height: 40%;
+  z-index: 2;
+  top: 49%;
+  left: 43%;
+  transform: rotate(-3deg);
+}
+
+.stem5{
+  position: absolute;
+  background: #423e1a;
+  width: .70%;
+  height: 30%;
+  z-index: 2;
+  top: 49%;
+  left: 48%;
+}
+
+.petal1{
+  position: absolute;
+  background: #FF4500;
+  /*background: radial-gradient(circle, rgba(136,40,180,1) 0%, rgba(252,70,107,1) 100%);*/
+  width: 5%;
+    height: 9%;
+    top: 41%;
+    left: 39.5%;
+    border-radius: 100%;
+    z-index: 3;
+}
+
+.petal2{
+  position: absolute;
+  background: #FF4500;
+  /*background: radial-gradient(circle, rgba(136,40,180,1) 0%, rgba(252,70,107,1) 100%);*/
+  width: 7%;
+  height: 11%;
+  top: 46.5%;
+  left: 43%;
+  border-radius: 100%;
+  z-index: 3;
+}
+
+.petal3{
+  position: absolute;
+  background: #FF4500;
+  /*background: radial-gradient(circle, rgba(136,40,180,1) 0%, rgba(252,70,107,1) 100%);*/
+  width: 5%;
+  height: 9%;
+  top: 44%;
+  left: 48%;
+  border-radius: 100%;
+  z-index: 3;
+}
+
+.petal4{
+  position: absolute;
+  background: #FF4500;
+  /*background: radial-gradient(circle, rgba(136,40,180,1) 0%, rgba(252,70,107,1) 100%);*/
+  width: 3%;
+  height: 5%;
+  top: 45%;
+  left: 45%;
+  border-radius: 100%;
+  z-index: 3;
+}
+
+.petal5{
+  position: absolute;
+  background: #FF4500;
+  /*background: radial-gradient(circle, rgba(136,40,180,1) 0%, rgba(252,70,107,1) 100%);*/
+  width: 3%;
+  height: 5%;
+  top: 42%;
+  left: 43%;
+  border-radius: 100%;
+  z-index: 3;
+}
+
+.petal6{
+  position: absolute;
+  background: #FF4500;
+  /*background: radial-gradient(circle, rgba(136,40,180,1) 0%, rgba(252,70,107,1) 100%);*/
+  width: 3%;
+  height: 5%;
+  top: 47%;
+  left: 47%;
+  border-radius: 100%;
+  z-index: 3;
+}
+.petal7{
+  position: absolute;
+  background: #FF4500;
+  /*background: radial-gradient(circle, rgba(136,40,180,1) 0%, rgba(252,70,107,1) 100%);*/
+  width: 5%;
+  height: 14%;
+  top: 42%;
+  left: 45%;
+  border-radius: 100%;
+  z-index: 2;
+}
+
+.petal8{
+  position: absolute;
+  background: white;
+  /*background: radial-gradient(circle, rgba(136,40,180,1) 0%, rgba(252,70,107,1) 100%);*/
+  width: 2%;
+  height: 2%;
+  top: 42%;
+  left: 45%;
+  border-radius: 100%;
+  z-index: 2;
+}
+
+.petal9{
+  position: absolute;
+  background: white;
+  /*background: radial-gradient(circle, rgba(136,40,180,1) 0%, rgba(252,70,107,1) 100%);*/
+  width: 2%;
+  height: 2%;
+  top: 49%;
+  left: 45%;
+  border-radius: 100%;
+  z-index: 2;
+}
+
+.petal10{
+  position: absolute;
+  background: white;
+  /*background: radial-gradient(circle, rgba(136,40,180,1) 0%, rgba(252,70,107,1) 100%);*/
+  width: 2%;
+  height: 3%;
+  top: 46%;
+  left: 48%;
+  border-radius: 100%;
+  z-index: 3;
+}
+
+.petal11{
+  position: absolute;
+  background: white;
+  /*background: radial-gradient(circle, rgba(136,40,180,1) 0%, rgba(252,70,107,1) 100%);*/
+  width: 2%;
+  height: 3%;
+  top: 45%;
+  left: 42%;
+  border-radius: 100%;
+  z-index: 3;
+}
+
+
+
+.pot{
+  
+}
+
+.cylinder{
+  position: absolute;
+  left: 20%;
+  top: 77%;
+  width: 145px;
+  height: 114px;
+  border-radius: 50px/70px;
+  background-color: #8B4513;
+  z-index: 3;
+}
+
+.trapezium{
+  position: absolute;
+  left: 29%;
+  top: 31%;
+  border-bottom: 31px solid beige;
+    border-left: 25px solid transparent;
+    border-right: 22px solid transparent;
+    height: 128px;
+    width: 30px;
+  z-index: 3;
+}
+
+
+
+.bag{
+  
+  background: #8B4513;
+  position: absolute;
+  left: 20.5%;
+  top: 95%;
+  width: 130px;
+  height: 20px;
+  border-radius: 100px / 50px;
+  z-index: 1;
+  /*transform: skew(70deg,-12deg);*/
+}
+
+.lid{
+  
+  background: #8B4513;
+  position: absolute;
+  left: 21%;
+  top: 74%;
+  width: 126px;
+  height: 51px;
+  border-radius: 100px / 50px;
+  z-index: 1;
+  /*transform: skew(70deg,-12deg);*/
+}
+
